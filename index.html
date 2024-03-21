@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Testing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body class="bg-gray-900">
+    <div class="header bg-sky-500 fixed top-0 w-full">
+        <div class="max-w-7xl m-auto flex justify-between p-3 text-gray-100 font-semibold tracking-wide">
+
+            <div class="">
+                <span class="text-2xl font-bold">LOGO</span>
+            </div>
+
+            <div id="menu" class="menuu fixed top-0 left-0 w-0 h-full bg-sky-500 duration-500 z-10 overflow-x-hidden   md:static md:w-auto md:h-auto md:bg-transparent md:overflow-x-hidden">
+                <button class="absolute top-2 right-5 text-red-500 md:hidden text-2xl" onclick="closeNav()"><ion-icon name="close"></ion-icon></button>
+                <ul class="flex flex-col gap-8 mt-10 p-10 md:flex-row md:mt-0 md:p-0">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+
+            <div class="hidden md:block text-sm *:px-5 *:py-1.5 *:bg-yellow-500 *:rounded-lg *:border" >
+                <button class="hover:bg-yellow-600 duration-500">LOGIN</button>
+                <button class="hover:bg-yellow-600 duration-500">SIGNIN</button>
+            </div>
+              
+            <button class="openbtn md:hidden text-2xl" onclick="openNav()"><ion-icon name="menu"></ion-icon></button> 
+              
+        </div>
+
+    </div>
+
+    <div class="main mt-20">
+        <div class="max-w-7xl m-auto text-gray-100">
+            <div class="">
+                <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-3 text-3xl font-bold">
+                    <div><img src="./images/img1.jpg"></div>
+                    <div><img src="./images/img2.jpg"></div>
+                    <div><img src="./images/img3.jpg"></div>
+                    <div><img src="./images/img4.jpg"></div>
+                    <div><img src="./images/img5.jpg"></div>
+
+                    <div><img src="./images/pic1.jpg"></div>
+                    <div><img src="./images/pic2.jpg"></div>
+                    <div><img src="./images/pic3.jpg"></div>
+                    <div><img src="./images/pic4.jpg"></div>
+                    <div><img src="./images/pic5.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("menu").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("menu").style.width = "0";
+        }
+    </script>
+</body>
+</html>
